@@ -1,9 +1,17 @@
-
-
 @media (min-width: 992px) {
     .logoPosition {
         position: relative;
-        top: 25px;
+        top: 20px;
     }
-  }
-  
+}
+
+@media (min-width: 992px) {
+    .menuPosition {
+        position: relative;
+        bottom: 14px;
+    }
+}
+
+.large {
+    font-size: large;
+}
