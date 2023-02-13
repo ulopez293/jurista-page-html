@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="css/navbar.css">
 </head>
 
-<body style="background-color: #f6f6f6;">
+<body style="background-color: #f7f5f5">
 
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <div class="container px-5" style="display:block;text-align: center;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class=" px-5" style="display:block;text-align: center;width: 100%;">
             <div class="navbar-brand">
-                <img src="assets/logo.png" class="img-fluid mt-1 logoPosition"
-                    style="display:block;text-align: left;min-width: 250px; max-width: 250px;"
+                <img src="assets/logo2.png" class="img-fluid mt-1 logoPosition"
+                    style="display:block;text-align: center;min-width: 250px; max-width: 250px;"
                     alt="Jurista Servicios Legales">
             </div>
             <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
@@ -30,16 +30,10 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="./juristas.html">Equipo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://wordpress.org/" target="_blank">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://revistajurista.com"
-                            target="_blank">Revista</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://ijurista.com/despacho/"
-                            target="_blank">Sistema</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-card-list"></i> Servicios
+                             Servicios
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
@@ -49,23 +43,27 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item  active" href="./polizas.html">
+                                <a class="dropdown-item active" href="./polizas.html">
                                     <i class="bi bi-file-earmark-lock2 me-2"></i>
                                     Polizas
                                 </a>
                             </li>
                             <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./contacto.html">
-
-                                    <i class="bi bi-building me-2"></i>
-                                    Oficinas
+                                <a class="dropdown-item" href="./municipios.html">
+                                    <i class="bi bi-geo-fill me-2"></i>
+                                    Especializados a Municipios
                                 </a>
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="./juristas.html">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://revistajurista.com"
+                            target="_blank">Revista</a></li>
+                    <li><a class="nav-link" href="./contacto.html"><i class="bi bi-building me-2"></i>Oficinas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/ijurista"
+                            target="_blank">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ijurista.com/despacho/" target="_blank"><i
+                                class="bi bi-person-workspace me-2"></i>Sistema</a></li>
                 </ul>
             </div>
         </div>
@@ -106,12 +104,17 @@
                     </ul>
                     <h5><b>Contactanos</b></h5>
                     <p>
-                        <i class="bi bi-telephone me-2"></i>228 1292 925  &nbsp;&nbsp;&nbsp;<i class="bi bi-whatsapp  me-1"></i> 228 1342 205 <br>
-                        <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-envelope-at me-1" viewBox="0 0 16 16">
-                            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
-                            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                        <i class="bi bi-telephone me-2"></i>228 1292 925 &nbsp;&nbsp;&nbsp;<i
+                            class="bi bi-whatsapp  me-1"></i> 228 1342 205 <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope-at me-1" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                            <path
+                                d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
                         </svg> auxiliarxal1@polizaderentas.com <br>
-                        <i class="bi bi-geo-alt me-2"></i>Av. Araucarias, No. 190, Fracc. Indeco Ánimas, Xalapa. Veracruz
+                        <i class="bi bi-geo-alt me-2"></i>Av. Araucarias, No. 190, Fracc. Indeco Ánimas, Xalapa.
+                        Veracruz
                     </p>
                 </div>
                 <div class="col-lg-6">
@@ -152,7 +155,7 @@
                                 <li>Protección ante extinción de dominio.</li>
                             </ul>
                             <br><br><br><br>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-dark">
+                            <div class="w-100 btn btn-lg btn-outline-dark" style="cursor: auto;">
                                 <p><b>Precio</b> de un mes de renta</p>
                                 <p>
                                     <b>Residenciales:</b><br>
@@ -162,7 +165,7 @@
                                     <b>Comerciales</b><br>
                                     <b>Min.</b> $4,900.00
                                 </p>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -222,7 +225,7 @@
                                 </li>
                             </ul>
                             <br>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-dark">
+                            <div class="w-100 btn btn-lg btn-outline-dark" style="cursor: auto;">
                                 <p><b>Precio</b> de un mes de renta</p>
                                 <p>
                                     <b>Residenciales:</b><br>
@@ -232,7 +235,7 @@
                                     <b>Comerciales</b><br>
                                     <b>Min.</b> $6,900.00
                                 </p>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -241,27 +244,29 @@
         </div>
         <!-- Footer-->
     </main>
-    <footer class="py-5 pb-3 bg-dark">
+    <footer class="py-5 pb-3 bg-light">
         <div class="container px-4 px-lg-5">
-            <p class="m-0 mb-3 text-center text-white" id="footer">
+            <p class="m-0 mb-3 text-center text-dark" id="footer">
                 Jurista Servicios Legales &copy; 2004
             </p>
-            <p class="m-0 text-center text-white">
-                <a href="tel:228-134-2205" class="link-light"><i class="bi bi-telephone me-4"></i></a>
-                <a href="mailto: contacto@ijurista.com" class="link-light"><i class="bi bi-envelope me-4"></i></a>
-                <a href="https://www.facebook.com/ijurista" target="_blank" class="link-light"><i
+            <p class="m-0 text-center text-dark">
+                <a href="tel:228-134-2205" class="link-dark"><i class="bi bi-telephone me-4"></i></a>
+                <a href="mailto: contacto@ijurista.com" class="link-dark"><i class="bi bi-envelope me-4"></i></a>
+                <a href="https://www.facebook.com/ijurista" target="_blank" class="link-dark"><i
                         class="bi bi-facebook me-4"></i></a>
-                <a href="https://twitter.com/RevistaJurista" target="_blank" class="link-light"><i
+                <a href="https://twitter.com/RevistaJurista" target="_blank" class="link-dark"><i
                         class="bi bi-twitter me-4"></i></a>
-                <a href="https://www.linkedin.com/company/jurista" target="_blank" class="link-light"><i
+                <a href="https://www.linkedin.com/company/jurista" target="_blank" class="link-dark"><i
                         class="bi bi-linkedin me-4"></i></a>
                 <a href="https://www.youtube.com/channel/UCsg6mb0zP4n78rJ8WA1o-xg/feed" target="_blank"
-                    class="link-light"><i class="bi bi-youtube"></i></a>
+                    class="link-dark"><i class="bi bi-youtube"></i></a>
             </p>
             <br><br>
-            <p class="pGrullaFooter">
-                Hecho por <a classname="brown-text text-lighten-3" style="text-decoration: none; font-weight:bold; color:burlywood;" target="_blank" href="https://www.facebook.com/grullasoftware/">Grulla Software</a>
-            </p>
+            <!-- <p class="pGrullaFooter">
+                Hecho por <a classname="brown-text text-lighten-3"
+                    style="text-decoration: none; font-weight:bold; color:burlywood;" target="_blank"
+                    href="https://www.facebook.com/grullasoftware/">Grulla Software</a>
+            </p> -->
         </div>
     </footer>
 
