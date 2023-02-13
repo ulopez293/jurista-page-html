@@ -33,7 +33,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                             Servicios
+                            Servicios
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
@@ -121,22 +121,26 @@
                             <ul class="navbar-nav" style="width: 100%;text-align: center;">
                                 <div class="col-lg-3 mb-1 mt-1">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Mision</a>
+                                        <a id="mi" onclick="Mision(this)" class="nav-link active" aria-current="page"
+                                            href="javascript:void(0);">Mision</a>
                                     </li>
                                 </div>
                                 <div class="col-lg-3 mb-1 mt-1">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Vision</a>
+                                        <a id="vi" onclick="Vision(this)" class="nav-link"
+                                            href="javascript:void(0);">Vision</a>
                                     </li>
                                 </div>
                                 <div class="col-lg-3 mb-1 mt-1">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Objetivo</a>
+                                        <a id="ob" onclick="Objetivo(this)" class="nav-link"
+                                            href="javascript:void(0);">Objetivo</a>
                                     </li>
                                 </div>
                                 <div class="col-lg-3 mb-1 mt-1">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Valores</a>
+                                        <a id="va" onclick="Valores(this)" class="nav-link"
+                                            href="javascript:void(0);">Valores</a>
                                     </li>
                                 </div>
                             </ul>
@@ -147,8 +151,8 @@
                 <div class="row gx-4 gx-lg-5 large">
                     <div class="col-lg-12 mb-5">
                         <div class="card h-100">
-                            <div class="card-body pt-3 pb-3">
-                                <p class="card-text" id="quienesSomos" style="text-align: justify;">
+                            <div class="card-body pt-4 pb-3">
+                                <p class="card-text" id="textoCambiante" style="text-align: justify;">
                                     <small>
                                         Prestar servicios legales especializados de excelencia, que permitan
                                         generar seguridad jurídica y soluciones viables a nuestros clientes, con
@@ -159,7 +163,6 @@
                         </div>
                     </div>
                 </div>
-                <br>
 
                 <div class="row gx-4 gx-lg-5 align-items-center my-5">
                     <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0"
@@ -174,18 +177,6 @@
                             e innovadoras mediante los <b style="color:rgb(233, 124, 0);">Mecanismos Alternativos de
                                 Justicia.</b>
                         </h3>
-                        <!-- <p style="text-align: justify;">
-                            Jurista Servicios Legales es una Firma de abogados fundada en México con visión global
-                            dedicada a ofrecer asesoría legal de alto valor agregado y especializado. Nace como un grupo
-                            de litigantes dedicados a brindar asesoramiento, experiencia y soluciones en temas
-                            especializados en derecho, al más alto nivel. Como parte de nuestras actividades, ofrecemos
-                            servicios legales, trabajamos juntos en una base de atención y ética profesional, nuestra
-                            estructura y enfoque nos permiten lograr excelentes resultados para nuestros clientes en
-                            asuntos complejos y críticos. Jurista Servicios Legales cuenta con oficinas propias en
-                            diversas ciudades del Estado de Veracruz y en el Estado de Campeche, corresponsalías y
-                            alianzas a nivel nacional e internacional, lo que caracteriza nuestros servicios es el
-                            trabajo en conjunto y la alta formación en todas las especialidades de nuestros juristas.
-                        </p> -->
                     </div>
                 </div>
 
@@ -545,6 +536,70 @@
             location.href = (!((navigator.userAgent.match(/Android/i)) || (navigator.userAgent.match(/iPhone/i)))) ? 'https://wa.me/522281342205?text=Hola%20busco%20asesoria%20juridica' : 'whatsapp://send?phone=522281342205&text=Hola+busco+asesoria+juridica&app_absent=0'
         }
         //document.getElementById('contactar').addEventListener("click", () => { callbackWhatsapp() })
+
+        function Mision(e) {
+            document.getElementById("textoCambiante").textContent = `
+            Prestar servicios legales especializados de excelencia, que permitan generar seguridad jurídica y soluciones viables a nuestros clientes, con los más altos estándares de calidad y ética profesional. 
+            `
+            document.getElementById("mi").className = "nav-link active"
+            document.getElementById("vi").className = "nav-link"
+            document.getElementById("ob").className = "nav-link"
+            document.getElementById("va").className = "nav-link"
+        }
+        function Vision(e) {
+            document.getElementById("textoCambiante").textContent = `
+            Ser la firma mexicana de servicios legales, más reconocida y con las mejores alianzas nacionales e internacionales.
+            `
+            document.getElementById("mi").className = "nav-link"
+            document.getElementById("vi").className = "nav-link active"
+            document.getElementById("ob").className = "nav-link"
+            document.getElementById("va").className = "nav-link"
+        }
+        function Objetivo(e) {
+            document.getElementById("textoCambiante").textContent = `
+            Es nuestro principal objetivo llegar a ser como Firma Legal y Centro Privado de Justicia Alternativa los mejores a nivel nacional e internacional en materia penal en México, así como el principal referente de dicha práctica para clientes en el extranjero, distinguiéndonos por la más alta exigencia ética y profesional del gremio penalista en México. 
+            `
+            document.getElementById("mi").className = "nav-link"
+            document.getElementById("vi").className = "nav-link"
+            document.getElementById("ob").className = "nav-link active"
+            document.getElementById("va").className = "nav-link"
+        }
+        function Valores(e) {
+            let div = document.getElementById("textoCambiante")
+            div.innerHTML = ''
+            let ul = document.createElement("ul")
+
+            let confianza = document.createElement("li")
+            confianza.textContent = `Confianza`
+            let credibilidad = document.createElement("li")
+            credibilidad.textContent = `Credibilidad`
+            let secretopro = document.createElement("li")
+            secretopro.textContent = `Secreto Profesional`
+            let indepedencia = document.createElement("li")
+            indepedencia.textContent = `Independencia`
+            let aprendizaje = document.createElement("li")
+            aprendizaje.textContent = `Aprendizaje`
+            let disciplina = document.createElement("li")
+            disciplina.textContent = `Disciplina`
+            let preservacion = document.createElement("li")
+            preservacion.textContent = `Preservancia`
+            let empatia = document.createElement("li")
+            empatia.textContent = `Empatia`
+            ul.appendChild(confianza)
+            ul.appendChild(credibilidad)
+            ul.appendChild(secretopro)
+            ul.appendChild(indepedencia)
+            ul.appendChild(aprendizaje)
+            ul.appendChild(disciplina)
+            ul.appendChild(preservacion)
+            ul.appendChild(empatia)
+            div.appendChild(ul)
+
+            document.getElementById("mi").className = "nav-link"
+            document.getElementById("vi").className = "nav-link"
+            document.getElementById("ob").className = "nav-link"
+            document.getElementById("va").className = "nav-link active"
+        }
     </script>
     <script src="bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
