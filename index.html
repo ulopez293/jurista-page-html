@@ -562,7 +562,7 @@
         let callbackWhatsapp = function () {
             location.href = (!((navigator.userAgent.match(/Android/i)) || (navigator.userAgent.match(/iPhone/i)))) ? 'https://wa.me/522281342205?text=Hola%20busco%20asesoria%20juridica' : 'whatsapp://send?phone=522281342205&text=Hola+busco+asesoria+juridica&app_absent=0'
         }
-        //document.getElementById('contactar').addEventListener("click", () => { callbackWhatsapp() })
+        document.getElementById('contactar').addEventListener("click", () => { callbackWhatsapp() })
 
         function Mision(e) {
             document.getElementById("textoCambiante").textContent = `
